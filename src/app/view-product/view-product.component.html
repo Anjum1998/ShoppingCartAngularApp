@@ -6,17 +6,19 @@
 
             <div class="container">
             <div class="row g-3">
+               
              
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3" *ngFor="let i of view">
 
-                    <div class="card" style="height:45rem">
-                        <img height="180px" src="{{i.image}}" class="card-img-top" alt="...">
+                    <div class="card" style="height:30rem">
+                        <img src="https://cdn.shopify.com/s/files/1/0070/7032/files/trending-products_c8d0d15c-9afc-47e3-9ba2-f7bad0505b9b.png?format=jpg&quality=90&v=1614559651" class="card-img-top" alt="...">
+                        
                         <div class="card-body">
-                        <h5 class="card-title">Product Title :{{i.title}} </h5>
-                        <p class="card-text">Description :{{i.description}}</p>
-                        <p class="card-text">Rate : {{i.price}}</p>
-                        <p class="card-text">Category:{{i.category}}</p>
-                        <p class="card-text">Count:{{i.rating.count}}</p>
+                        <h5 class="card-title">Product code:{{i.productCode}} </h5>
+                        <p class="card-text">Product Name :{{i.productName}}</p>
+                        <p class="card-text">Brand :{{i.brand}}</p>
+                        <p class="card-text">Price:{{i.price}}</p>
+                        <p class="card-text">expiryDate:{{i.expiryDatet}}</p>
                         <a href="" class="button btn btn-primary">Buy Now</a>
                      
 
