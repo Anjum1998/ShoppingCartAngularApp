@@ -10,6 +10,10 @@ export class ApiService {
 
   fetchProduct=()=>
   {
-    return this.http.get("https://fakestoreapi.com/products")
+    return this.http.get("http://localhost:8080/viewProduct")
+  }
+  addProduct=(dataTosend:any)=>
+  {
+    return this.http.post("http://localhost:8080/productAdd",dataTosend)
   }
 }
