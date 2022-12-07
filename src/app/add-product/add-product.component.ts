@@ -33,6 +33,20 @@ export class AddProductComponent {
       (response:any)=>
       {
         console.log(response)
+        if (response.status=="success") {
+          alert("success")
+          this.productName=""
+          this.productCode=""
+          this.distributorName=""
+          this.brand=""
+          this.expiryDate=""
+          this.manufacturingDate=""
+          this.price=""
+          this.sellerName=""
+          this.image=""
+        } else {
+          alert("wrong")
+        }
       }
     )
   }
